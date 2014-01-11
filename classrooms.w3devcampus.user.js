@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name          W3 Dev Campus Classrooms
-// @namespace     http://arkhi.org/userscripts/
+// @namespace     http://arkhi.org/
 // @downloadURL   https://github.com/arkhi/userscripts/raw/master/classrooms.w3devcampus.user.js
 // @description   On W3 Dev Campus Classrooms, modify styles to make it more legible and focus on what's essential
 // @match         http://classroom.w3devcampus.com/*
