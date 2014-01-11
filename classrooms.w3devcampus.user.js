@@ -1,11 +1,22 @@
 // ==UserScript==
-// @name          Classrooms W3 Dev Campus
+// @name          W3 Dev Campus Classrooms
 // @namespace     http://arkhi.org/userscripts/
 // @downloadURL   https://github.com/arkhi/userscripts/raw/master/classrooms.w3devcampus.user.js
 // @description   On W3 Dev Campus Classrooms, modify styles to make it more legible and focus on what's essential
 // @match         http://classroom.w3devcampus.com/*
 // @version       0.3
 // ==/UserScript==
+
+if (typeof GM_addStyle === 'undefined') {
+  GM_addStyle = function(css) {
+      var head = document.getElementsByTagName('head')[0], style = document.createElement('style');
+      if (!head) {return}
+      style.type = 'text/css';
+      try {style.innerHTML = css}
+      catch(x) {style.innerText = css}
+      head.appendChild(style);
+  };
+}
 
 GM_addStyle(' \
   .path-mod-book h2 {  \
