@@ -4,7 +4,7 @@
 // @downloadURL   https://github.com/arkhi/userscripts/raw/master/classrooms.w3devcampus.user.js
 // @description   On W3 Dev Campus Classrooms, modify styles to make it more legible and focus on what's essential
 // @match         http://classroom.w3devcampus.com/*
-// @version       0.3
+// @version       0.4
 // ==/UserScript==
 
 if (typeof GM_addStyle === 'undefined') {
@@ -78,9 +78,9 @@ GM_addStyle(' \
     line-height: 1.5 !important;  \
   } \
 \
-  .path-mod-book .rj_insertcode_javascript,  \
-  .path-mod-book .rj_insertcode_javascript pre { \
-    width: auto;  \
+  .path-mod-book [class^=rj_insertcode_],  \
+  .path-mod-book [class^=rj_insertcode_] pre { \
+    width: auto !important;  \
     padding: .25em .5em;  \
     border: 0;  \
     font-size: 1rem;  \
